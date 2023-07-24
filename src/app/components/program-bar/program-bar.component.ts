@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class ProgramBarComponent {
 
+  programBarTitle: string = 'Jose-Carlos-Gomez-Rueda.Curriculum-Vitae - Visual Studio Code'
+
 }
