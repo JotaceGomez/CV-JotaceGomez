@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+/* GLOBAL STYLES */
+
+/* Custom Font */
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+body {
+  font-family: "JetBrains Mono", monospace;
+}
+
+/* Custom Colour Palette */
+:root {
+  --custom-orange-strong: #e37933;
+
+  --custom-orange-light: #ce9178;
+
+  --custom-blue-strong: #569cd6;
+
+  --custom-blue-light: #9cdcfe;
+
+  --custom-yellow: #d7ab4c;
+
+  --custom-white: #e4e4e4;
+
+  --custom-green: #6a9955;
+
+  --bg-dark: #1e1e1e;
+
+  --bg-light: #585858;
+
+  --bg-lateral-menu: #252526;
+
+  --bg-program-bar: #3c3c3c;
+}
