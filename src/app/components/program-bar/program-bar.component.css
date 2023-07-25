@@ -1,8 +1,7 @@
-.custom-program-bar{
-    background-color: var(--bg-program-bar);
-    height: 32px;    
+.custom-program-bar {
+  background-color: var(--bg-program-bar);
 }
 
 img{
-    height: 20px;
+    max-height: 40px;
 }
