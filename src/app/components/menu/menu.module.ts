@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MenuComponent } from './menu.component';
+import { SectionsModule } from '../sections/sections.module';
 
 
 @NgModule({
@@ -8,7 +9,8 @@ import { MenuComponent } from './menu.component';
     MenuComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    SectionsModule
   ],
   exports: [
     MenuComponent
