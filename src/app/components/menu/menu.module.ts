@@ -2,6 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MenuComponent } from './menu.component';
 import { SectionsModule } from '../sections/sections.module';
+import { RouterModule } from '@angular/router';
+
+
 
 
 @NgModule({
@@ -10,7 +13,8 @@ import { SectionsModule } from '../sections/sections.module';
   ],
   imports: [
     CommonModule,
-    SectionsModule
+    SectionsModule,
+    RouterModule
   ],
   exports: [
     MenuComponent

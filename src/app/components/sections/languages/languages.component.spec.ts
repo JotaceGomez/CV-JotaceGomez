@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { WhoAmIComponent } from './who-am-i.component';
+import { LanguagesComponent } from './languages.component';
 
-describe('WhoAmIComponent', () => {
-  let component: WhoAmIComponent;
-  let fixture: ComponentFixture<WhoAmIComponent>;
+describe('LanguagesComponent', () => {
+  let component: LanguagesComponent;
+  let fixture: ComponentFixture<LanguagesComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ WhoAmIComponent ]
+      declarations: [ LanguagesComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(WhoAmIComponent);
+    fixture = TestBed.createComponent(LanguagesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

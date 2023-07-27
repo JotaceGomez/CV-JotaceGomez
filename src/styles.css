@@ -62,3 +62,11 @@ body {
   display: flex;
   align-items: center;
 }
+
+/* Custom Position */
+.position-relative {
+  position: relative;
+}
+.position-absolute {
+  position: absolute;
+}

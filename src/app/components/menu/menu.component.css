@@ -3,12 +3,42 @@
   position: absolute;
   height: 100%;
   background-color: var(--bg-lateral-menu);
+  padding-top: 40px;
+}
+
+.custom-header-menu {
+  padding-left: 20px;
+}
+
+.line {
+  position: absolute;
+  top: 25px;
+  left: 28px;
+  height: 300px;
+  width: 20px;
+  border-left: 1px solid var(--custom-white);  
+}
+
+.navbar-nav {
+  height: 310px;  
+}
+
+.nav-link {
+  padding-left: 40px;
 }
 
 li {
-  margin-bottom: 3vh;
+  cursor: pointer;
 }
 
 ul {
-  border-left: 1px solid var(--custom-white);
+  padding-top: 20px;
+}
+
+.active-link {
+  background-color: var(--bg-light);
+}
+
+li:hover {
+  background-color: var(--bg-program-bar);
 }
