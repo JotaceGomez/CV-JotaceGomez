@@ -1,6 +1,6 @@
 .custom-navTab {
   padding-left: 250px;
-  background-color: var(--bg-light);
+  background-color: var(--bg-program-bar);
 }
 
 .nav-link {
@@ -16,5 +16,5 @@ li {
 }
 
 li:hover:not(.active-link) {
-  background-color: var(--bg-program-bar);
+  background-color: var(--bg-lateral-menu);
 }
