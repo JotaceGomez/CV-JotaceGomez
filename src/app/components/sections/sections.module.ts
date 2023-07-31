@@ -8,18 +8,16 @@ import { LanguagesComponent } from './languages/languages.component';
 import { TechnologiesComponent } from './technologies/technologies.component';
 
 
-
 @NgModule({
   declarations: [
-    
     ExperienceComponent,
     StudiesComponent,
     WhoIsJotaceComponent,
     LanguagesComponent,
-    TechnologiesComponent
+    TechnologiesComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
   ]
 })
 export class SectionsModule { }
