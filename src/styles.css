@@ -10,11 +10,11 @@ body {
 
 /* Custom Colour Palette */
 :root {
-  --custom-orange-strong: #e37933;
+  --custom-orange-dark: #e37933;
 
   --custom-orange-light: #ce9178;
 
-  --custom-blue-strong: #569cd6;
+  --custom-blue-dark: #569cd6;
 
   --custom-blue-light: #9cdcfe;
 
@@ -37,7 +37,7 @@ body {
   --bg-nav-hover: #2d2d2d;
 }
 
-/* Custom FLEX Attributes */
+/* Custom FLEX Styles */
 .flex-center-center {
   display: flex;
   align-items: center;
@@ -74,4 +74,18 @@ body {
 }
 .position-absolute {
   position: absolute;
+}
+
+/* Custom Fonts */
+h2 {
+  color: var(--custom-orange-dark);
+}
+h3 {
+  color: var(--custom-blue-dark);
+}
+h4{
+  color: var(--custom-yellow);
+}
+h5{
+  color: var(--custom-blue-light);
 }
