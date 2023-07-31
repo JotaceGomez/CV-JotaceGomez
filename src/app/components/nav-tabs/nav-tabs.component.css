@@ -1,0 +1,20 @@
+.custom-navTab {
+  padding-left: 250px;
+  background-color: var(--bg-light);
+}
+
+.nav-link {
+  color: var(--bg-custom-white);
+}
+
+li {
+  cursor: pointer;
+}
+
+.active-link {
+  background-color: var(--bg-dark);
+}
+
+li:hover:not(.active-link) {
+  background-color: var(--bg-program-bar);
+}

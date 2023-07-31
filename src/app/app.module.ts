@@ -5,18 +5,20 @@ import { AppComponent } from './app.component';
 import { ProgramBarModule } from './components/program-bar/program-bar.module';
 import { MenuModule } from './components/menu/menu.module';
 import { RouterModule, Routes } from '@angular/router';
+import { NavTabsComponent } from './components/nav-tabs/nav-tabs.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavTabsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ProgramBarModule,
     MenuModule,
-    RouterModule,    
+    RouterModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

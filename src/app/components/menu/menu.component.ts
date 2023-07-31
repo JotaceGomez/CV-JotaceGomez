@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { Router, NavigationEnd } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
 
 
 @Component({
@@ -18,16 +17,14 @@ export class MenuComponent implements OnInit {
 
   ngOnInit(): void {
     this.checkActiveLink();
-    console.log('la ruta es:',this.router.url);
-    
-    
+    console.log('la ruta es:', this.router.url);
+
+
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         this.checkActiveLink();
       }
     });
-
-
   }
 
   private checkActiveLink(): void {

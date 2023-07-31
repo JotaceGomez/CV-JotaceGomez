@@ -8,6 +8,7 @@ import { LanguagesComponent } from './components/sections/languages/languages.co
 import { TechnologiesComponent } from './components/sections/technologies/technologies.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'who-is-jotace', pathMatch: 'full' },
   { path: 'who-is-jotace', component: WhoIsJotaceComponent },
   { path: 'experience', component: ExperienceComponent },
   { path: 'education', component: StudiesComponent },

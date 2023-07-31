@@ -5,6 +5,7 @@
 body {
   font-family: "JetBrains Mono", monospace;
   color: var(--custom-white);
+  background-color: var(--bg-dark);
 }
 
 /* Custom Colour Palette */

@@ -4,9 +4,6 @@ import { MenuComponent } from './menu.component';
 import { SectionsModule } from '../sections/sections.module';
 import { RouterModule } from '@angular/router';
 
-
-
-
 @NgModule({
   declarations: [
     MenuComponent
