@@ -1,5 +1,12 @@
-<section *ngFor="let item of experience">
-    <h2>{{item.title}}</h2>
-    <h3>{{item.company}}</h3>
-    <h4>{{item.time}}</h4>
+<section class="custom-tab-content">
+    <section *ngFor="let item of experience">
+        <h2>{{item.title}}</h2>
+        <h3>{{item.company}}</h3>
+        <h4>{{'.' + this.technologies + '{'}}</h4>
+        <div *ngFor="let tech of item.technologies" class="d-flex">
+            <h5>{{tech.title + ':'}}</h5>
+            <h5 class="custom-h5 ms-2">{{tech.description}}</h5>
+        </div>
+        <h4>{{'}'}}</h4>
+    </section>
 </section>

@@ -9,6 +9,7 @@ import { TabContent, TabsContentService } from 'src/app/services/tabs-content-se
 export class ExperienceComponent implements OnInit {
 
   experience: Array<TabContent> = [];
+  technologies: string = 'Technologies';
 
   constructor(private tabContentService: TabsContentService) { }
 
