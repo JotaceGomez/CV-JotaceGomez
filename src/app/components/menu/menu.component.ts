@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
-
+import { MenuNavService } from 'src/app/services/menu-nav-service/menu-nav.service';
 
 @Component({
   selector: 'app-menu',
@@ -13,13 +13,12 @@ export class MenuComponent implements OnInit {
   isExperienceRoute: boolean = false;
 
 
-  constructor(private router: Router) { }
+  constructor(
+    private router: Router,
+    public menuNavService: MenuNavService) { }
 
   ngOnInit(): void {
     this.checkActiveLink();
-    console.log('la ruta es:', this.router.url);
-
-
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         this.checkActiveLink();
@@ -29,8 +28,5 @@ export class MenuComponent implements OnInit {
 
   private checkActiveLink(): void {
     const currentUrl = this.router.url;
-    if (this.isExperienceRoute = currentUrl.includes('experience')) {
-      console.log('lo incluye');
-    }
   }
 }

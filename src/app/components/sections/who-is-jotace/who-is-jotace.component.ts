@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MenuNavService } from 'src/app/services/menu-nav-service/menu-nav.service';
 
 @Component({
   selector: 'app-who-is-jotace',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./who-is-jotace.component.css']
 })
 export class WhoIsJotaceComponent {
+
+  
 
 }

@@ -1,20 +1,9 @@
 <section class="custom-navTab">
 
     <ul class="nav justify-content-start align-items-center">
-        <li class="nav-item py-2 " routerLink="/who-is-jotace" routerLinkActive="active-link">
-            <a class="nav-link">¿Quién es Jotace?</a>
-        </li>
-        <li class="nav-item py-2" routerLink="/experience" routerLinkActive="active-link">
-            <a class="nav-link">Experiencia</a>
-        </li>
-        <li class="nav-item py-2" routerLink="/education" routerLinkActive="active-link">
-            <a class="nav-link">Estudios</a>
-        </li>
-        <li class="nav-item py-2" routerLink="/languages" routerLinkActive="active-link">
-            <a class="nav-link">Idiomas</a>
-        </li>
-        <li class="nav-item py-2" routerLink="/technologies" routerLinkActive="active-link">
-            <a class="nav-link">Tecnologías</a>
+        <li *ngFor="let item of menuNavService.menuItems" class="nav-item py-2 " routerLink="{{item.navLink}}"
+            routerLinkActive="active-link">
+            <a class="nav-link">{{item.title}}</a>
         </li>
     </ul>
 </section>

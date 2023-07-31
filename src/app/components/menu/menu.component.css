@@ -40,5 +40,5 @@ ul {
 }
 
 li:hover:not(.active-link) {
-  background-color: var(--bg-program-bar);
+  background-color: var(--bg-nav-hover);
 }
