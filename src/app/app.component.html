@@ -1,4 +1,14 @@
-<app-program-bar></app-program-bar>
-<app-menu></app-menu>
-<app-nav-tabs></app-nav-tabs>
-<router-outlet></router-outlet>
+<div class="row"><app-program-bar></app-program-bar></div>
+<div class="row">
+    <div class="d-none d-lg-block col-3 pe-0">
+        <app-menu></app-menu>
+    </div>
+    <div class="col-12 col-lg-9 ps-0">
+        <div class="row d-none d-lg-block" style="--bs-gutter-x:0">
+            <app-nav-tabs></app-nav-tabs>
+        </div>
+        <div class="row">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

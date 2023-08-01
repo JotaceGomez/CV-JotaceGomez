@@ -1,12 +1,25 @@
-<section class="custom-tab-content">
+<section class="pt-4 ps-5 px-5">
     <section *ngFor="let item of experience">
-        <h2>{{item.title}}</h2>
-        <h3>{{item.company}}</h3>
-        <h4>{{'.' + this.technologies + '{'}}</h4>
-        <div *ngFor="let tech of item.technologies" class="d-flex">
-            <h5>{{tech.title + ':'}}</h5>
-            <h5 class="custom-h5 ms-2">{{tech.description}}</h5>
-        </div>
-        <h4>{{'}'}}</h4>
+        <ul class="list-unstyled">
+
+            <li class="custom-dark-orange">{{item.title}}</li>
+            <li class="custom-dark-blue">{{item.company}}</li>
+            <li class="custom-green">{{'//'+item.time}}</li>
+            <li>
+                <p>{{item.description}}</p>
+            </li>
+            <li *ngIf="item.technologies" class="custom-yellow">{{'.' + this.technologies + '{'}}</li>
+            <li *ngIf="item.technologies">
+                <ul class="list-unstyled" *ngFor="let tech of item.technologies">
+                    <li class="custom-light-blue">{{tech.title + ':'}}
+                        <span class="custom-light-orange">
+                            {{tech.description}}
+                        </span>
+                    </li>
+                </ul>
+            </li>
+            <li *ngIf="item.technologies" class="custom-yellow">{{'}'}}</li>
+
+        </ul>
     </section>
 </section>

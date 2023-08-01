@@ -1,6 +1,5 @@
-.custom-navTab {
-  padding-left: 250px;
-  background-color: var(--bg-tab);
+.custom-navTab {  
+  background-color: var(--bg-tab);  
 }
 
 .nav-link {

@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
+import { MenuNavService } from 'src/app/services/menu-nav-service/menu-nav.service';
+
 
 @Component({
   selector: 'app-program-bar',
@@ -10,7 +13,10 @@ export class ProgramBarComponent {
   documentTitle: string = 'Jose-Carlos-Gomez-Rueda.Curriculum-Vitae - Visual Studio Code'
   documentResponsiveTitle: string = 'Jose-Carlos-Gomez-Rueda.Curriculum-Vitae'
 
-  constructor() { }
+  constructor(
+    public menuNavService: MenuNavService,
+    private router: Router
+  ) { }
 
 
 

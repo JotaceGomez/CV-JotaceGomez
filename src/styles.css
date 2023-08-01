@@ -11,30 +11,41 @@ body {
 /* Custom Colour Palette */
 :root {
   --custom-orange-dark: #e37933;
-
   --custom-orange-light: #ce9178;
-
   --custom-blue-dark: #569cd6;
-
   --custom-blue-light: #9cdcfe;
-
   --custom-yellow: #d7ab4c;
-
   --custom-white: #e4e4e4;
-
   --custom-green: #6a9955;
-
   --bg-body: #1e1e1e;
-
   --bg-program-bar: #3c3c3c;
-
   --bg-lateral-menu: #252526;
-
   --bg-tab: #2d2d2d;
-
   --bg-light: #585858;
-
   --bg-nav-hover: #2d2d2d;
+}
+
+/* Custom Color for Fonts */
+.custom-dark-orange {
+  color: var(--custom-orange-dark);
+}
+.custom-light-orange {
+  color: var(--custom-orange-light);
+}
+.custom-dark-blue {
+  color: var(--custom-blue-dark);
+}
+.custom-light-blue {
+  color: var(--custom-blue-light);
+}
+.custom-yellow {
+  color: var(--custom-yellow);
+}
+.custom-white {
+  color: var(--custom-white);
+}
+.custom-green {
+  color: var(--custom-green);
 }
 
 /* Custom FLEX Styles */
@@ -75,17 +86,6 @@ body {
 .position-absolute {
   position: absolute;
 }
-
-/* Custom Fonts */
-h2 {
-  color: var(--custom-orange-dark);
-}
-h3 {
-  color: var(--custom-blue-dark);
-}
-h4 {
-  color: var(--custom-yellow);
-}
-h5 {
-  color: var(--custom-blue-light);
+.cursor-pointer {
+  cursor: pointer;
 }
