@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProgramBarModule } from './components/program-bar/program-bar.module';
 import { MenuModule } from './components/menu/menu.module';
-import { RouterModule, Routes } from '@angular/router';
 import { NavTabsComponent } from './components/nav-tabs/nav-tabs.component';
+import { ProgramBarModule } from './components/program-bar/program-bar.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavTabsComponent
+    NavTabsComponent    
   ],
   imports: [
     BrowserModule,

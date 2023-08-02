@@ -10,11 +10,14 @@ export class ExperienceComponent implements OnInit {
 
   experience: Array<TabContent> = [];
   technologies: string = 'Technologies';
+  numberOfLines: number = 200;
 
-  constructor(private tabContentService: TabsContentService) { }
+  constructor(
+    private tabContentService: TabsContentService,
+
+  ) { }
 
   ngOnInit(): void {
     this.experience = this.tabContentService.experience;
   }
-
 }

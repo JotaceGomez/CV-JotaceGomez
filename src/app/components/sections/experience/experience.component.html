@@ -1,25 +1,41 @@
-<section class="pt-4 ps-5 px-5">
-    <section *ngFor="let item of experience">
-        <ul class="list-unstyled">
+<section class="row position-relative mt-4">
 
-            <li class="custom-dark-orange">{{item.title}}</li>
-            <li class="custom-dark-blue">{{item.company}}</li>
-            <li class="custom-green">{{'//'+item.time}}</li>
-            <li>
-                <p>{{item.description}}</p>
-            </li>
-            <li *ngIf="item.technologies" class="custom-yellow">{{'.' + this.technologies + '{'}}</li>
-            <li *ngIf="item.technologies">
-                <ul class="list-unstyled" *ngFor="let tech of item.technologies">
-                    <li class="custom-light-blue">{{tech.title + ':'}}
-                        <span class="custom-light-orange">
-                            {{tech.description}}
-                        </span>
-                    </li>
-                </ul>
-            </li>
-            <li *ngIf="item.technologies" class="custom-yellow">{{'}'}}</li>
+    <div class="content">
+        <section *ngFor="let item of experience" class="mb-4">
+            <ul class="list-unstyled">
+                <li>
+                    <p class="custom-dark-orange">{{item.title}}</p>
+                </li>
+                <li>
+                    <p class="custom-dark-blue">{{item.company}}
+                        <span class="custom-green ms-2">{{'//'+item.time}}</span>
+                    </p>
+                </li>
+                <li>
+                    <p>{{item.description}}</p>
+                </li>
+                <li *ngIf="item.technologies">
+                    <p class="custom-yellow">{{'.' + this.technologies + ' {'}}</p>
+                </li>
+                <li *ngIf="item.technologies">
+                    <ul class="list-unstyled ms-4" *ngFor="let tech of item.technologies">
+                        <li>
+                            <p class="custom-light-blue">{{tech.title + ':'}}
+                                <span class="custom-light-orange">
+                                    {{tech.description}}
+                                </span>
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+                <li *ngIf="item.technologies">
+                    <p class="custom-yellow">{{'}'}}</p>
+                </li>
+            </ul>
+        </section>
+        <div class="numeration-container">
+            <app-page-numeration [maxNumber]="numberOfLines"></app-page-numeration>
+        </div>
+    </div>
 
-        </ul>
-    </section>
 </section>
