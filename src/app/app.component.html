@@ -1,13 +1,13 @@
-<div class="row"><app-program-bar></app-program-bar></div>
+<header class="row fixed-header"><app-program-bar></app-program-bar></header>
 <div class="row">
-    <div class="d-none d-lg-block col-3 col-xl-2 pe-0">
+    <div class="d-none d-lg-block col-3 col-xl-2 pe-0 fixed-sidebar">
         <app-menu></app-menu>
     </div>
     <div class="col-12 col-lg-9 col-xl-10 ps-0">
         <div class="row d-none d-lg-block">
-            <app-nav-tabs></app-nav-tabs>
+            <app-nav-tabs class="fixed-nav-tabs"></app-nav-tabs>
         </div>
-        <div class="row">
+        <div class="row fixed-router-outlet">
             <div class="col-12"><router-outlet></router-outlet></div>
         </div>
     </div>
