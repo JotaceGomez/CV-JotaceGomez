@@ -57,7 +57,7 @@ export class TabsContentService {
           description: 'Angular, Bootstrap, Twig'
         },
         {
-          title: 'Tools',
+          title: 'Digital Tools',
           description: 'Dashboard and own console, GitHub'
         }
       ]
@@ -82,7 +82,7 @@ export class TabsContentService {
           description: 'REST API with Node & Express | Full CRUD'
         },
         {
-          title: 'Libraries',
+          title: 'External Libraries',
           description: 'Nodemailer, bcryptjs, jsonwebtoken, dayjs'
         },
         {
@@ -90,7 +90,7 @@ export class TabsContentService {
           description: 'MySQL'
         },
         {
-          title: 'Tools',
+          title: 'Digital Tools',
           description: 'VisualStudio, MySQLWorkBench, GitHub'
         }
       ]

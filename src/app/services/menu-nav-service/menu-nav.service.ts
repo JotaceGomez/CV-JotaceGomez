@@ -13,7 +13,7 @@ export interface MenuItem {
 export class MenuNavService {
 
   menuItems: MenuItem[] = [
-    { id: 1, title: 'Who is Jotace?', navLink: '/who-is-jotace' },
+    { id: 1, title: 'Who is Jotace?', navLink: '/curriculum-vitae' },
     { id: 2, title: 'Experience', navLink: '/experience' },
     { id: 3, title: 'Education', navLink: '/education' },
     { id: 4, title: 'Languages', navLink: '/languages' },
