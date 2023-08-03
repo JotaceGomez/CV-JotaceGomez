@@ -18,6 +18,10 @@ export interface TabContent {
   providedIn: 'root'
 })
 export class TabsContentService {
+  stringTechnologies: string = 'Technologies';
+  stringMainEducation: string = 'Main Education';
+  stringCourses: string = 'Courses';
+
 
   experience: Array<TabContent> = [
     {
@@ -102,6 +106,87 @@ export class TabsContentService {
       time: 'nov. 2017 - feb. 2021) | 3.5 years',
       description: 'Mixed role: Community Manager, Content Manager, Graphic Designer, and Copywriter. Also being responsible for the company\'s CRM: Beyond Up. Profiles configuration, task flows, mailing campaigns, process automation, and portfolio management.',
     }
+  ];
+
+  education: Array<TabContent> = [
+    {
+      id: 3,
+      title: 'Full Stack Web Developer + .NET specialization bootcamp',
+      company: 'CodeHouse Academy',
+      time: '2021 - 2022 | 700 hours',
+      description: 'Intensive bootcamp of 6 months/700 hours in which I trained to become a developer with the following technologies.',
+      technologies: [
+        {
+          title: 'Module 1',
+          description: 'HTML, CSS, Bootstrap, SASS, UX/UI, Webs Responsive, GIT/Github'
+        },
+        {
+          title: 'Module 2',
+          description: 'Javascript ES6 Advance'
+        },
+        {
+          title: 'Module 3',
+          description: 'Typescript, Angular13, MySQL'
+        },
+        {
+          title: 'Module 4',
+          description: 'Node, NodeJS + Express'
+        },
+        {
+          title: 'Module 5',
+          description: 'POO, Objets C#, SOLID, C# advanced, API Rest'
+        },
+        {
+          title: 'Module 6',
+          description: 'Final project'
+        },
+        {
+          title: 'Masterclasses',
+          description: 'Cloud Computing Azure, Design Thinking, Power BI, Low Code, Unity'
+        }
+
+      ]
+    },
+    {
+      id: 2,
+      title: 'Master Degree: Digital Marketing & ECommerce',
+      company: 'EAE Business School / Barcelona University',
+      time: '2019',
+      description: 'Advanced knowledge in online marketing strategies, data analytics, digital advertising, and effective online sales techniques. This program has equipped me to excel in navigating the dynamic landscape of digital business.',
+    },
+    {
+      id: 1,
+      title: 'Communication & Journalism Degree',
+      company: 'University of Malaga',
+      time: '2012 - last year',
+    },
+  ];
+
+  courses: Array<TabContent> = [
+    {
+      id: 4,
+      title: 'Advance Angular 13+ for Web Development',
+      company: 'Udemy | Mario Girón',
+      time: '2021',
+    },
+    {
+      id: 3,
+      title: 'Flutter Development with Dart: Officially created in collaboration with the Google Flutter team',
+      company: 'Udemy | Dr. Angela Yu',
+      time: '2022',
+    },
+    {
+      id: 2,
+      title: 'Flutter 3: Complete Development Guide for IOS and Android',
+      company: 'Udemy | Fernando Herrera',
+      time: '2022',
+    },
+    {
+      id: 1,
+      title: 'Advance Flutter 3: Take your knowledge to the next level',
+      company: 'Udemy | Fernando Herrera',
+      time: '2022',
+    },
   ];
 
   constructor() { }

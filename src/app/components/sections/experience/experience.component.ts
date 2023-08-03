@@ -7,17 +7,16 @@ import { TabContent, TabsContentService } from 'src/app/services/tabs-content-se
   styleUrls: ['./experience.component.css']
 })
 export class ExperienceComponent implements OnInit {
-
   experience: Array<TabContent> = [];
-  technologies: string = 'Technologies';
+  stringTechnologies?: string;
   numberOfLines: number = 200;
 
   constructor(
     private tabContentService: TabsContentService,
-
   ) { }
 
   ngOnInit(): void {
     this.experience = this.tabContentService.experience;
+    this.stringTechnologies = this.tabContentService.stringTechnologies;
   }
 }

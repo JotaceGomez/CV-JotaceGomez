@@ -1,5 +1,6 @@
 <section class="row position-relative mt-4">
 
+
     <div class="content">
         <section *ngFor="let item of experience" class="mb-4">
             <ul class="list-unstyled">
@@ -15,7 +16,7 @@
                     <p>{{item.description}}</p>
                 </li>
                 <li *ngIf="item.technologies">
-                    <p class="custom-yellow">{{'.' + this.technologies + ' {'}}</p>
+                    <p class="custom-yellow">{{'.' + stringTechnologies + ' {'}}</p>
                 </li>
                 <li *ngIf="item.technologies">
                     <ul class="list-unstyled ms-4" *ngFor="let tech of item.technologies">
@@ -31,8 +32,11 @@
                 <li *ngIf="item.technologies">
                     <p class="custom-yellow">{{'}'}}</p>
                 </li>
+                <br>
+
             </ul>
         </section>
+
         <div class="numeration-container">
             <app-page-numeration [maxNumber]="numberOfLines"></app-page-numeration>
         </div>
