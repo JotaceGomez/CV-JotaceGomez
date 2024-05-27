@@ -23,6 +23,7 @@ export class TabsContentService {
   stringCourses: string = 'Courses';
   stringMainExperience: string = 'Experience';
   otherExperience: string = 'Other Experience';
+  stringLanguage: string = 'Languages';
 
   experience: Array<TabContent> = [
     {
@@ -225,6 +226,33 @@ export class TabsContentService {
       title: 'Advance Flutter 3: Take your knowledge to the next level',
       company: 'Udemy | Fernando Herrera',
       time: '2022',
+    },
+  ];
+
+  languages: Array<TabContent> = [
+    {
+      id: 1,
+      title: 'Spanish',
+      company: 'Spain',
+      time: ' Native',
+      description:
+        "I'm from Malaga, Spain. I've always lived here, although I've been on exchange in many countries, strengthening other languages.",
+    },
+    {
+      id: 2,
+      title: 'English',
+      company: 'Trinity College London',
+      time: ' B2+',
+      description:
+        "I've been speaking English from a young age. Watching series and movies in English since childhood helped me develop a keen ear for the language. Besides that, I've been studying English for many years. I also have experience working in English; at Marbill, I worked exclusively in English because it was a Danish company.",
+    },
+    {
+      id: 3,
+      title: 'Italian',
+      company: 'La Sapienza, Rome University',
+      time: ' B2',
+      description:
+        "I've always loved Italian and its entire culture. I learned by taking private lessons and spent a year living in Rome on an Erasmus exchange.",
     },
   ];
 
