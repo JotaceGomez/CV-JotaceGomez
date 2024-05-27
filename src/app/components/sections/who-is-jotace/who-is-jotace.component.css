@@ -1,0 +1,21 @@
+.content {
+  position: relative;
+  padding-left: 65px;
+  overflow: hidden;
+}
+
+.numeration-container {
+  position: absolute;
+  top: 0;
+  left: 13px;
+}
+
+.profile-pic {
+  width: 20%;
+}
+
+@media (max-width: 992px) {
+  .profile-pic {
+    width: 60%;
+  }
+}

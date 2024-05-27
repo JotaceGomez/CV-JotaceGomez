@@ -1,6 +1,75 @@
-<section class="bg-tab container">
+<section class="row position-relative mt-4">
+  <div class="content">
+    <p class="custom-green">{{ formattedWho }}</p>
+    <br />
+    <section class="mb-4">
+      <ul class="list-unstyled">
+        <img
+          src="https://media.licdn.com/dms/image/D4E03AQHe4MfkyZPdhg/profile-displayphoto-shrink_800_800/0/1704905888219?e=1722470400&v=beta&t=N0z-_HMzC10zDnQ6gmWaQjp947NxiVEPw9Z7Zt7CNaE"
+          alt="Frontend Developer Angular"
+          class="profile-pic"
+        />
+        <li><br /></li>
+        <li class="custom-dark-orange">
+          {{ content.name }}
+        </li>
+        <li class="custom-dark-blue">
+          {{ content.job }}
+        </li>
+        <li class="custom-yellow">
+          {{ content.city }}
+        </li>
+        <li class="custom-green">
+          {{ content.birth }}
+        </li>
+        <br />
+        <li>
+          Hello! 😊 My name is
+          <span class="custom-light-blue">José Carlos Gómez</span> and I'm a
+          <span class="custom-light-blue"
+            >Front-End Developer specialized in Angular</span
+          >👨‍💻 <br /><br />
 
-    
-    
+          I decided to dive into the world of programming after several years
+          working in the digital marketing sector. I trained at the CodeHouse
+          Full Stack Web Developer bootcamp with a specialization in .NET, where
+          I gained skills in technologies like
+          <span class="custom-light-blue"
+            >HTML, CSS, Bootstrap, SASS, Javascript, TypeScript, Angular, MySQL,
+            NodeJS, MongoDB, Express, and .NET.</span
+          >
+          <br /><br />
+          My short-term goal is to continue expanding my knowledge and skills as
+          a developer. Long-term, I aspire to be part of innovative and exciting
+          projects, gaining the trust of a company to lead their best projects.
+          <br /><br />
+          My previous experience as a digital marketing technician and my
+          passion for photography have introduced me to the world of graphic
+          design, allowing me to handle creative tools like Adobe Photoshop,
+          Lightroom, and GIMP.
+          <br /><br />
+          The three adjectives that best describe my ideal work environment are
+          <span class="custom-light-blue">
+            "organized, digital, and creative."</span
+          >
 
+          <br /><br />
+          When I'm not working, I enjoy disconnecting with activities like
+          hiking, having a beer in the sun, or indulging in my passion for
+          cinema by watching movies and series in their original language, which
+          has helped me improve my English since childhood.
+          <br />
+          <br />
+
+          I consider myself an open-minded, responsible person with good
+          communication skills. Feel free to reach out if you want to talk about
+          programming, work, or any other topic! 😊
+        </li>
+      </ul>
+    </section>
+
+    <div class="numeration-container">
+      <app-page-numeration [maxNumber]="numberOfLines"></app-page-numeration>
+    </div>
+  </div>
 </section>

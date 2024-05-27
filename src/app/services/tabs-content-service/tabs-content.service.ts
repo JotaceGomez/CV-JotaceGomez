@@ -14,6 +14,14 @@ export interface TabContent {
   technologies?: Array<Technologies>;
 }
 
+export interface WhoIsJotace {
+  name?: string;
+  birth?: string;
+  city?: string;
+  job?: string;
+  description?: string;
+}
+
 @Injectable({
   providedIn: 'root',
 })
@@ -24,6 +32,15 @@ export class TabsContentService {
   stringMainExperience: string = 'Experience';
   otherExperience: string = 'Other Experience';
   stringLanguage: string = 'Languages';
+  whoIsJotace: string = 'Who is Jotace?';
+
+  whoIsContent: WhoIsJotace = {
+    name: 'Jose Carlos Gomez Rueda',
+    birth: '15/05/1994',
+    city: 'Malaga, Spain',
+    job: 'Frontend developer specialized in Angular',
+    description: 'test'
+  };
 
   experience: Array<TabContent> = [
     {
