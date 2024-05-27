@@ -10,7 +10,7 @@ import { MenuNavService } from 'src/app/services/menu-nav-service/menu-nav.servi
 })
 export class ProgramBarComponent {
 
-  documentTitle: string = 'Jose-Carlos-Gomez-Rueda.Curriculum-Vitae - Visual Studio Code'
+  documentTitle: string = 'Jose-Carlos-Gomez-Rueda.Curriculum-Vitae - IDE'
   documentResponsiveTitle: string = 'Jose-Carlos-Gomez-Rueda.Curriculum-Vitae'
 
   constructor(

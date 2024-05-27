@@ -1,81 +1,82 @@
 <section class="row position-relative mt-4">
-    <div class="content">
-        
-        <p class="custom-green">{{formattedMainEducation}}</p>
-        <br>
-        <section *ngFor="let item of education" class="mb-4">
-            <ul class="list-unstyled">
-                <li>
-                    <p class="custom-dark-orange">{{item.title}}</p>
-                </li>
-                <li>
-                    <p class="custom-dark-blue">{{item.company}}
-                        <span class="custom-green ms-2">{{'//'+item.time}}</span>
-                    </p>
-                </li>
-                <li>
-                    <p>{{item.description}}</p>
-                </li>
-                <li *ngIf="item.technologies">
-                    <p class="custom-yellow">{{'.' + stringTechnologies + ' {'}}</p>
-                </li>
-                <li *ngIf="item.technologies">
-                    <ul class="list-unstyled ms-4" *ngFor="let tech of item.technologies">
-                        <li>
-                            <p class="custom-light-blue">{{tech.title + ':'}}
-                                <span class="custom-light-orange">
-                                    {{tech.description + ';'}}
-                                </span>
-                            </p>
-                        </li>
-                    </ul>
-                </li>
-                <li *ngIf="item.technologies">
-                    <p class="custom-yellow">{{'}'}}</p>
-                </li>
-            </ul>
-        </section>
+  <div class="content">
+    <p class="custom-green">{{ formattedMainEducation }}</p>
+    <br />
+    <section *ngFor="let item of education" class="mb-4">
+      <ul class="list-unstyled">
+        <li>
+          <p class="custom-dark-orange">{{ item.title }}</p>
+        </li>
+        <li>
+          <p class="custom-dark-blue">
+            {{ item.company }}
+            <span class="custom-green ms-2">{{ "//" + item.time }}</span>
+          </p>
+        </li>
+        <li>
+          <p>{{ item.description }}</p>
+        </li>
+        <li *ngIf="item.technologies">
+          <p class="custom-yellow">{{ "." + stringTechnologies + " {" }}</p>
+        </li>
+        <li *ngIf="item.technologies">
+          <ul class="list-unstyled ms-4" *ngFor="let tech of item.technologies">
+            <li>
+              <p class="custom-light-blue">
+                {{ tech.title + ":" }}
+                <span class="custom-light-orange">
+                  {{ tech.description + ";" }}
+                </span>
+              </p>
+            </li>
+          </ul>
+        </li>
+        <li *ngIf="item.technologies">
+          <p class="custom-yellow">{{ "}" }}</p>
+        </li>
+      </ul>
+    </section>
 
-        <br>
-        <p class="custom-green">{{ formattedCourses }}</p>
-        <br>
+    <br />
+    <p class="custom-green">{{ formattedCourses }}</p>
+    <br />
 
-
-        <section *ngFor="let item of courses" class="mb-4">
-            <ul class="list-unstyled">
-                <li>
-                    <p class="custom-dark-orange">{{item.title}}</p>
-                </li>
-                <li>
-                    <p class="custom-dark-blue">{{item.company}}
-                        <span class="custom-green ms-2">{{'//'+item.time}}</span>
-                    </p>
-                </li>
-                <li>
-                    <p>{{item.description}}</p>
-                </li>
-                <li *ngIf="item.technologies">
-                    <p class="custom-yellow">{{'.' + stringTechnologies + ' {'}}</p>
-                </li>
-                <li *ngIf="item.technologies">
-                    <ul class="list-unstyled ms-4" *ngFor="let tech of item.technologies">
-                        <li>
-                            <p class="custom-light-blue">{{tech.title + ':'}}
-                                <span class="custom-light-orange">
-                                    {{tech.description + ';'}}
-                                </span>
-                            </p>
-                        </li>
-                    </ul>
-                </li>
-                <li *ngIf="item.technologies">
-                    <p class="custom-yellow">{{'}'}}</p>
-                </li>
-            </ul>
-        </section>
-        <div class="numeration-container">
-            <app-page-numeration [maxNumber]="numberOfLines"></app-page-numeration>
-        </div>
+    <section *ngFor="let item of courses" class="mb-4">
+      <ul class="list-unstyled">
+        <li>
+          <p class="custom-dark-orange">{{ item.title }}</p>
+        </li>
+        <li>
+          <p class="custom-dark-blue">
+            {{ item.company }}
+            <span class="custom-green ms-2">{{ "//" + item.time }}</span>
+          </p>
+        </li>
+        <li>
+          <p>{{ item.description }}</p>
+        </li>
+        <li *ngIf="item.technologies">
+          <p class="custom-yellow">{{ "." + stringTechnologies + " {" }}</p>
+        </li>
+        <li *ngIf="item.technologies">
+          <ul class="list-unstyled ms-4" *ngFor="let tech of item.technologies">
+            <li>
+              <p class="custom-light-blue">
+                {{ tech.title + ":" }}
+                <span class="custom-light-orange">
+                  {{ tech.description + ";" }}
+                </span>
+              </p>
+            </li>
+          </ul>
+        </li>
+        <li *ngIf="item.technologies">
+          <p class="custom-yellow">{{ "}" }}</p>
+        </li>
+      </ul>
+    </section>
+    <div class="numeration-container">
+      <app-page-numeration [maxNumber]="numberOfLines"></app-page-numeration>
     </div>
-
+  </div>
 </section>
