@@ -1,4 +1,4 @@
-<header class="row fixed-header"><app-program-bar></app-program-bar></header>
+<!-- <header class="row fixed-header"><app-program-bar></app-program-bar></header>
 <div class="row">
     <div class="d-none d-lg-block col-3 col-xl-2 pe-0 fixed-sidebar">
         <app-menu></app-menu>
@@ -12,3 +12,41 @@
         </div>
     </div>
 </div>
+ -->
+
+ <style>
+    /* Estilos personalizados para el sidebar */
+    .sidebar {
+      height: 100vh; /* Altura completa de la ventana */
+      background-color: red; /* Fondo rojo */
+      color: yellow; /* Texto amarillo */
+      font-size: 16px; /* Tamaño de fuente de 16px */
+    }
+
+    .sidebar a {
+      color: yellow; /* Color del texto de los enlaces */
+      display: block; /* Mostrar los enlaces como bloques */
+      padding: 10px 15px; /* Espaciado interno de los enlaces */
+      text-decoration: none; /* Sin subrayado */
+    }
+
+    .sidebar a:hover {
+      background-color: darkred; /* Color de fondo cuando se pasa el mouse por encima */
+    }
+  </style>
+
+ <div class="d-flex">
+    <!-- Sidebar -->
+    <div class="navbar nav">
+      <h2>Menú</h2>
+      <a href="#">Inicio</a>
+      <a href="#">Acerca de</a>
+      <a href="#">Servicios</a>
+      <a href="#">Contacto</a>
+    </div>
+    <!-- Contenido principal -->
+    <div class="flex-grow-1 p-3">
+      <h1>Bienvenido</h1>
+      <p>Contenido principal de la página.</p>
+    </div>
+  </div>
